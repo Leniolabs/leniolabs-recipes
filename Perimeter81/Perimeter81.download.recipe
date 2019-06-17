@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Perimeter81.</string>
 	<key>Identifier</key>
-	<string>com.github.leninolabs.download.Perimeter81</string>
+	<string>com.github.leniolabs.download.Perimeter81</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
