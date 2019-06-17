@@ -32,7 +32,7 @@
   <key>MinimumVersion</key>
   <string>1.0.0</string>
   <key>ParentRecipe</key>
-  <string>com.github.leniolabs.pkg.Perimeter81</string>
+  <string>com.github.leniolabs.download.Perimeter81</string>
   <key>Process</key>
   <array>
     <dict>
