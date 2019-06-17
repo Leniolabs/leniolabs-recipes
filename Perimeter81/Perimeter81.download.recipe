@@ -77,7 +77,7 @@
         <key>Arguments</key>
         <dict>
             <key>input_plist_path</key>
-            <string>%destination_path%/Applications/Perimeter 81.app/Contents/Info.plist</string>
+            <string>%destination_path%Perimeter 81.app/Contents/Info.plist</string>
         </dict>
     </dict>
 		<dict>
