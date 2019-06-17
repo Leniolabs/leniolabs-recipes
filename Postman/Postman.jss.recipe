@@ -7,7 +7,7 @@
   <key>Description</key>
   <string>Downloads the latest version of Postman and imports it into your JSS.</string>
   <key>Identifier</key>
-  <string>com.github.leniolabs.recipes.Postman</string>
+  <string>com.github.leniolabs.recipes.postman.leniolabs</string>
   <key>Input</key>
   <dict>
     <key>CATEGORY</key>
@@ -17,7 +17,7 @@
     <key>GROUP_TEMPLATE</key>
     <string>SmartGroupTemplate.xml</string>
     <key>NAME</key>
-    <string>Postman</string>
+    <string>Postman (Leniolabs)</string>
     <key>POLICY_CATEGORY</key>
     <string>Testing</string>
     <key>POLICY_TEMPLATE</key>
