@@ -32,7 +32,7 @@
   <key>MinimumVersion</key>
   <string>1.0.0</string>
   <key>ParentRecipe</key>
-  <string>com.github.homebysix.download.licecap</string>
+  <string>com.github.homebysix.pkg.licecap</string>
   <key>Process</key>
   <array>
     <dict>
