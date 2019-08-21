@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.1.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Chrome and creates a package.</string>
+	<string>Downloads the latest version of Chrome Canary and creates a package.</string>
 	<key>Identifier</key>
 	<string>leniolabs.pkg.Chrome</string>
 	<key>Input</key>
@@ -15,7 +15,7 @@
 		<key>BUNDLE_ID</key>
 		<string>com.google.Chrome.canary</string>
 		<key>NAME</key>
-		<string>Chrome</string>
+		<string>Chrome Canary</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
