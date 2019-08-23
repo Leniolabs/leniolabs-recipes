@@ -1,0 +1,10 @@
+<script>
+	<name>ChromeCanaryPostinstall.sh</name>
+	<category>Testing</category>
+	<filename>ChromeCanaryPostinstall.sh</filename>
+	<info />
+	<notes />
+	<priority>After</priority>
+	<parameters />
+	<os_requirements />
+</script>
