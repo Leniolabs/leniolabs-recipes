@@ -36,7 +36,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>leniolabs.download.DBeaverCommunity</string>
+	<string>leniolabs.pkg.DBeaverCommunity</string>
 	<key>Process</key>
 	<array>
 		<dict>
