@@ -30,6 +30,8 @@
 		<string>%NAME%.png</string>
 		<key>pkg_path</key>
     	<string></string>
+		<key>pkg_request</key>
+    	<string></string>
 		<key>bundleid</key>
 		<string>org.jkiss.dbeaver.core.product</string>
 	</dict>
