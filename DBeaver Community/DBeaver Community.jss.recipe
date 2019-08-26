@@ -30,11 +30,13 @@
 		<string>%NAME%.png</string>
 		<key>pkg_path</key>
     	<string></string>
+		<key>bundleid</key>
+		<string>dbeaver.io</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>leniolabs.pkg.DBeaverCommunity</string>
+	<string>leniolabs.download.DBeaverCommunity</string>
 	<key>Process</key>
 	<array>
 		<dict>
