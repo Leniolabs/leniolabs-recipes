@@ -30,6 +30,8 @@
 		<string>%NAME%.png</string>
 		<key>pkg_path</key>
     	<string></string>
+		<key>bundleid</key>
+		<string>dbeaver.io</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
