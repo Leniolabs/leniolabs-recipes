@@ -30,7 +30,7 @@
 				<string>%NAME%.pkg</string>
 			</dict>
 			<key>Processor</key>
-			<string>PkgCreator</string>
+			<string>AppPkgCreator</string>
 		</dict>
 	</array>
 </dict>
