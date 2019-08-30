@@ -79,7 +79,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%destination_path%DBeaver.app/Contents/Info.plist</string>
+				<string>%destination_path%Applications/DBeaver.app/Contents/Info.plist</string>
 			</dict>
 		</dict>
     <dict>
