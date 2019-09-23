@@ -28,7 +28,7 @@
     	<string></string>
 	</dict>
 	<key>ParentRecipe</key>
-	<string>com.github.jss-recipes.jss.Cakebrew</string>
+	<string>local.jss.Cakebrew</string>
 	<key>ParentRecipeTrustInfo</key>
 	<dict>
 		<key>non_core_processors</key>
