@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.jss.Cakebrew</string>
+	<key>Input</key>
+	<dict>
+		<key>BUNDLE_ID</key>
+		<string>com.brunophilipe.Cakebrew</string>
+		<key>CATEGORY</key>
+		<string>Computer Science</string>
+		<key>GROUP_NAME</key>
+		<string>%NAME%-update-smart</string>
+		<key>GROUP_TEMPLATE</key>
+		<string>SmartGroupTemplate.xml</string>
+		<key>NAME</key>
+		<string>Cakebrew</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Testing</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>PolicyTemplate.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>A GUI app that lets you easily manage your Homebrew formulas.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>Cakebrew.png</string>
+		<key>pkg_path</key>
+    	<string></string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.jss-recipes.jss.Cakebrew</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.homebysix.download.Cakebrew</key>
+			<dict>
+				<key>git_hash</key>
+				<string>4f95845e835d58b5d55431757ed401698e91fac1</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Cakebrew/Cakebrew.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>9e1448ee4c5b020b8b7a7378098a82c852e050203ecd302b73e735afa582e1a2</string>
+			</dict>
+			<key>com.github.homebysix.pkg.Cakebrew</key>
+			<dict>
+				<key>git_hash</key>
+				<string>6027e15adb30b81c8ae618979415cc30cb97248a</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.homebysix-recipes/Cakebrew/Cakebrew.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>3ac0e6ac673c0e505ec312079f591d1b03ca97085462b007eceb1d7c62388d30</string>
+			</dict>
+			<key>com.github.jss-recipes.jss.Cakebrew</key>
+			<dict>
+				<key>git_hash</key>
+				<string>1f947994caf0bb42439bfa2e67605936d6b9c7b9</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.jss-recipes/Cakebrew/Cakebrew.jss.recipe</string>
+				<key>sha256_hash</key>
+				<string>f05ede856417e5c5acdc567489c92ecf723c8d64093b867e1d617bf1f9f28de4</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>altopkg_server_url</key>
+				<string>http://localhost:3000</string>
+				<key>patch_server_url</key>
+				<string>https://patchserver.leniolabs.com</string>
+			</dict>
+			<key>Processor</key>
+			<string>AltoPkgImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
