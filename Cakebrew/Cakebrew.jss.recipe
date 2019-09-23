@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>leniolabs.jss.Cakebrew</string>
+	<string>Leniolabs.jss.Cakebrew</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
@@ -15,7 +15,7 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>SmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Leniolabs Cakebrew</string>
+		<string>Cakebrew</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
@@ -24,8 +24,6 @@
 		<string>A GUI app that lets you easily manage your Homebrew formulas.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Cakebrew.png</string>
-		<key>pkg_path</key>
-    	<string></string>
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.jss-recipes.jss.Cakebrew</string>
@@ -64,19 +62,5 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>altopkg_server_url</key>
-				<string>http://localhost:3000</string>
-				<key>patch_server_url</key>
-				<string>https://patchserver.leniolabs.com</string>
-			</dict>
-			<key>Processor</key>
-			<string>AltoPkgImporter</string>
-		</dict>
-	</array>
 </dict>
 </plist>
