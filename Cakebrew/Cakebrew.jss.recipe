@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>local.jss.Cakebrew</string>
+	<string>leniolabs.jss.Cakebrew</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
