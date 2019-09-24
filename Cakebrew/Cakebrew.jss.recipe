@@ -24,6 +24,8 @@
 		<string>A GUI app that lets you easily manage your Homebrew formulas.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>Cakebrew.png</string>
+		<key>pkg_path</key>
+    	<string></string>
 	</dict>
 	<key>ParentRecipe</key>
 	<string>com.github.jss-recipes.jss.Cakebrew</string>
