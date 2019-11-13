@@ -26,6 +26,8 @@
 		<string>Chameleon is a Firefox extension to Spoof your browser profile. Includes a few privacy enhancing options.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
+		<key>pkg_path</key>
+		<string></string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
