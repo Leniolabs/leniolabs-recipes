@@ -63,6 +63,16 @@
 			<string>FlatPkgUnpacker</string>
 		</dict>
 		<dict>
+			<key>Processor</key>
+			<string>PkgRootCreator</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pkgroot</key>
+				<string>%RECIPE_CACHE_DIR%/application_payload/</string>
+				<key>pkgdirs</key>
+			<dict/>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
@@ -86,6 +96,17 @@
 			<key>Processor</key>
 			<string>Versioner</string>
 		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/DBeaver Community.pkg</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+			</dict>
+    	</dict>
 	</array>
 </dict>
 </plist>
