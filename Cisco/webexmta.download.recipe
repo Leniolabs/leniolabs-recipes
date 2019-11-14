@@ -10,6 +10,8 @@
 	<string>leniolabs.download.webexmta</string>
 	<key>Input</key>
 	<dict>
+		<key>APP_FILENAME</key>
+		<string>webexmta</string>
 		<key>DOWNLOAD_URL</key>
 		<string>https://go.webex.com/client/T33L/mac/intel/webexapp.dmg</string>
 		<key>NAME</key>
@@ -23,7 +25,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%.pkg</string>
 				<key>url</key>
 				<string>%DOWNLOAD_URL%</string>
 			</dict>
@@ -35,6 +37,63 @@
 			<string>EndOfCheckPhase</string>
 		</dict>
 		<dict>
+			<key>Processor</key>
+			<string>FlatPkgUnpacker</string>
+			<key>Arguments</key>
+			<dict>
+				<key>flat_pkg_path</key>
+				<string>%pathname%</string>
+				<key>destination_path</key>
+				<string>%RECIPE_CACHE_DIR%/pkg_unpack</string>
+				<key>purge_destination</key>
+				<true/>
+			</dict>
+  	  	</dict>
+    	<dict>
+			<key>Processor</key>
+			<string>PkgRootCreator</string>
+			<key>Arguments</key>
+				<dict>
+				<key>pkgroot</key>
+				<string>%RECIPE_CACHE_DIR%/application_payload/</string>
+				<key>pkgdirs</key>
+				<dict/>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>PkgPayloadUnpacker</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_payload_path</key>
+				<string>%RECIPE_CACHE_DIR%/pkg_unpack/webex.pkg/Payload</string>
+				<key>destination_path</key>
+				<string>%pkgroot%</string>
+				<key>purge_destination</key>
+				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>Versioner</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%destination_path%Applications/Meeting Center/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
+			</dict>
+		</dict>
+    <dict>
+      <key>Processor</key>
+      <string>PkgCopier</string>
+      <key>Arguments</key>
+      <dict>
+        <key>source_pkg</key>
+        <string>%RECIPE_CACHE_DIR%/downloads/Cisco Webex Meeting.pkg</string>
+        <key>pkg_path</key>
+        <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+      </dict>
+    </dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>expected_authority_names</key>
@@ -44,69 +103,11 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<string>%pathname%/Cisco Webex Meetings.pkg</string>
+				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
-				<key>flat_pkg_path</key>
-				<string>%pathname%/Cisco Webex Meetings.pkg</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-			<key>Processor</key>
-			<string>FlatPkgUnpacker</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>PkgRootCreator</string>
-			<key>Arguments</key>
-			<dict>
-				<key>pkgroot</key>
-				<string>%RECIPE_CACHE_DIR%/application_payload/</string>
-				<key>pkgdirs</key>
-			<dict/>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload</string>
-				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/webex.pkg/Payload</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-			<key>Processor</key>
-			<string>PkgPayloadUnpacker</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload/Meeting Center/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>PkgCopier</string>
-			<key>Arguments</key>
-			<dict>
-				<key>source_pkg</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/DBeaver Community.pkg</string>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-			</dict>
-    	</dict>
 	</array>
 </dict>
 </plist>
