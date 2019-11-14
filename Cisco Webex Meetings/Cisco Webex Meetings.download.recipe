@@ -38,7 +38,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%pathname%/webexmta.app</string>
+				<string>%pathname%/Cisco Webex Meetings.pkg</string>
 				<key>requirement</key>
 				<string>identifier "com.cisco.webex.Cisco Webex Meetings"</string>
 			</dict>
