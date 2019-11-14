@@ -11,7 +11,7 @@
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
-		<string>https://go.webex.com/client/T33L/mac/intel/webexapp.dmg</string>
+		<string>https://akamaicdn.webex.com/client/webexapp.dmg</string>
 		<key>NAME</key>
 		<string>Cisco Webex Meetings</string>
 	</dict>
@@ -23,7 +23,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>webexapp.dmg</string>
 				<key>url</key>
 				<string>%DOWNLOAD_URL%</string>
 			</dict>
@@ -44,47 +44,19 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<string>%pathname%/Cisco Webex Meetings.pkg</string>
+				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack</string>
-				<key>flat_pkg_path</key>
-				<string>%pathname%/Cisco Webex Meetings.pkg</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
 			<key>Processor</key>
-			<string>FlatPkgUnpacker</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload</string>
-				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/webex.pkg/Payload</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-			<key>Processor</key>
-			<string>PkgPayloadUnpacker</string>
-		</dict>
-		<dict>
+			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/payload/Meeting Center/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
+				<string>%destination_path%Applications/Meeting Center/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
 			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
 		</dict>
 	</array>
 </dict>
