@@ -91,6 +91,17 @@
 				<string>%destination_path%/Meeting Center/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
 			</dict>
 		</dict>
+	<dict>
+      <key>Processor</key>
+      <string>PkgCopier</string>
+      <key>Arguments</key>
+      <dict>
+        <key>source_pkg</key>
+        <string>%RECIPE_CACHE_DIR%/downloads/webexapp.dmg/Cisco Webex Meetings.pkg</string>
+        <key>pkg_path</key>
+        <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+      </dict>
+    </dict>
 	</array>
 </dict>
 </plist>
