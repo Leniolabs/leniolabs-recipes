@@ -88,7 +88,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%destination_path%/Meeting Center/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
+				<string>%destination_path%/Meeting Center.app/Contents/Helpers/webexmta.app/Contents/Info.plist</string>
 			</dict>
 		</dict>
 	<dict>
