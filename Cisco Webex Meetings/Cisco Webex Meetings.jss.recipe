@@ -32,7 +32,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>leniolabs.pkg.Cisco Webex Meetings</string>
+	<string>leniolabs.download.Cisco Webex Meetings</string>
 	<key>Process</key>
 	<array>
 		<dict>
