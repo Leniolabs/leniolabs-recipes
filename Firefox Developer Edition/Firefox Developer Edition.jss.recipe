@@ -64,8 +64,6 @@
 				<key>scripts</key>
 				<array>
 					<dict>
-						<key>name</key>
-						<string>ChromeCanaryPostinstall.sh</string>
 						<key>template_path</key>
 						<string>FirefoxDeveloperEditionScriptTemplate.xml</string>
 					</dict>
