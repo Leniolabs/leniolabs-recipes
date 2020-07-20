@@ -75,8 +75,6 @@
 				<key>scripts</key>
 				<array>
 					<dict>
-						<key>name</key>
-						<string>ChromeCanaryPostinstall.sh</string>
 						<key>template_path</key>
 						<string>ChromeCanaryScriptTemplate.xml</string>
 					</dict>
